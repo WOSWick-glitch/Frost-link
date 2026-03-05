@@ -22,9 +22,9 @@ export default function Apply() {
       <header className="border-b border-white/10 bg-card/50 backdrop-blur-md h-16 flex items-center">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link href={`/alliance/${alliance.slug}`}>
-            <a className="text-sm text-muted-foreground hover:text-white flex items-center gap-2">
+            <span className="text-sm text-muted-foreground hover:text-white flex items-center gap-2 cursor-pointer">
               <ArrowLeft className="w-4 h-4" /> Back to Alliance
-            </a>
+            </span>
           </Link>
           <div className="flex items-center gap-2">
             <Snowflake className="w-5 h-5 text-primary" />

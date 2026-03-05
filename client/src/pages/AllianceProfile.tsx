@@ -14,9 +14,9 @@ export default function AllianceProfile() {
       
       <div className="border-b border-white/10 bg-black/40">
         <div className="container mx-auto px-4 md:px-6 py-3 flex items-center text-sm text-muted-foreground font-mono">
-          <Link href="/alliances"><a className="hover:text-white">Alliances</a></Link>
+          <Link href="/alliances"><span className="hover:text-white cursor-pointer">Alliances</span></Link>
           <ChevronRight className="w-4 h-4 mx-2" />
-          <Link href={`/state/${alliance.stateNumber}`}><a className="hover:text-white">State #{alliance.stateNumber}</a></Link>
+          <Link href={`/state/${alliance.stateNumber}`}><span className="hover:text-white cursor-pointer">State #{alliance.stateNumber}</span></Link>
           <ChevronRight className="w-4 h-4 mx-2" />
           <span className="text-white">{alliance.name}</span>
         </div>

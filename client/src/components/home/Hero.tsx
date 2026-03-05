@@ -31,16 +31,20 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-500">
           <Link href="/players">
-            <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-primary/20 text-primary border border-primary/50 hover:bg-primary hover:text-primary-foreground shadow-[0_0_15px_rgba(0,229,255,0.3)] hover:shadow-[0_0_25px_rgba(0,229,255,0.6)] transition-all">
-              <Swords className="mr-2 w-5 h-5" />
-              Recruit Players
-            </Button>
+            <span className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-primary/20 text-primary border border-primary/50 hover:bg-primary hover:text-primary-foreground shadow-[0_0_15px_rgba(0,229,255,0.3)] hover:shadow-[0_0_25px_rgba(0,229,255,0.6)] transition-all">
+                <Swords className="mr-2 w-5 h-5" />
+                Recruit Players
+              </Button>
+            </span>
           </Link>
           <Link href="/alliances">
-            <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg h-14 px-8 bg-card/50 border-white/10 hover:bg-white/10 text-white backdrop-blur-sm">
-              <Shield className="mr-2 w-5 h-5" />
-              Find an Alliance
-            </Button>
+            <span className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg h-14 px-8 bg-card/50 border-white/10 hover:bg-white/10 text-white backdrop-blur-sm">
+                <Shield className="mr-2 w-5 h-5" />
+                Find an Alliance
+              </Button>
+            </span>
           </Link>
         </div>
 

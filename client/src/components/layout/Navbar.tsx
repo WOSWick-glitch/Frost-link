@@ -10,26 +10,26 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <Link href="/">
-          <a className="flex items-center gap-2 group">
+          <span className="flex items-center gap-2 group cursor-pointer">
             <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center border border-primary/50 group-hover:shadow-[0_0_15px_rgba(0,229,255,0.5)] transition-all">
               <Snowflake className="w-5 h-5 text-primary" />
             </div>
             <span className="font-display font-bold text-xl tracking-wider text-white">
               FROST<span className="text-primary">LINK</span>
             </span>
-          </a>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
           <Link href="/states">
-            <a className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">States</a>
+            <span className="text-sm font-medium text-muted-foreground hover:text-white transition-colors cursor-pointer">States</span>
           </Link>
           <Link href="/alliances">
-            <a className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Alliances</a>
+            <span className="text-sm font-medium text-muted-foreground hover:text-white transition-colors cursor-pointer">Alliances</span>
           </Link>
           <Link href="/players">
-            <a className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Players</a>
+            <span className="text-sm font-medium text-muted-foreground hover:text-white transition-colors cursor-pointer">Players</span>
           </Link>
           
           <div className="w-px h-4 bg-white/10 mx-2"></div>
@@ -58,13 +58,13 @@ export function Navbar() {
         <div className="md:hidden border-t border-white/10 bg-card p-4 space-y-4">
           <div className="flex flex-col space-y-2">
             <Link href="/states">
-              <a className="px-4 py-2 rounded-md hover:bg-white/5 text-sm font-medium">States</a>
+              <span className="px-4 py-2 rounded-md hover:bg-white/5 text-sm font-medium cursor-pointer">States</span>
             </Link>
             <Link href="/alliances">
-              <a className="px-4 py-2 rounded-md hover:bg-white/5 text-sm font-medium">Alliances</a>
+              <span className="px-4 py-2 rounded-md hover:bg-white/5 text-sm font-medium cursor-pointer">Alliances</span>
             </Link>
             <Link href="/players">
-              <a className="px-4 py-2 rounded-md hover:bg-white/5 text-sm font-medium">Players</a>
+              <span className="px-4 py-2 rounded-md hover:bg-white/5 text-sm font-medium cursor-pointer">Players</span>
             </Link>
           </div>
           <div className="border-t border-white/10 pt-4 flex flex-col gap-2">

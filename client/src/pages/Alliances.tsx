@@ -113,13 +113,15 @@ export default function Alliances() {
                     Updated {alliance.lastUpdated}
                   </span>
                   <Link href={`/alliance/${alliance.slug}`}>
-                    <a className="text-sm text-primary hover:text-white transition-colors">Details</a>
+                    <span className="text-sm text-primary hover:text-white transition-colors cursor-pointer">Details</span>
                   </Link>
                 </div>
                 <Link href={`/apply/${alliance.slug}`}>
-                  <Button className="w-full bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground border border-primary/50 shadow-[0_0_10px_rgba(0,229,255,0.2)]">
-                    Apply Now
-                  </Button>
+                  <span className="w-full block">
+                    <Button className="w-full bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground border border-primary/50 shadow-[0_0_10px_rgba(0,229,255,0.2)]">
+                      Apply Now
+                    </Button>
+                  </span>
                 </Link>
               </div>
             </div>

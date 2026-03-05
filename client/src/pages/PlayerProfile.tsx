@@ -17,7 +17,7 @@ export default function PlayerProfile() {
       {/* Breadcrumbs */}
       <div className="border-b border-white/10 bg-black/40">
         <div className="container mx-auto px-4 md:px-6 py-3 flex items-center text-sm text-muted-foreground font-mono">
-          <Link href="/players"><a className="hover:text-white">Players</a></Link>
+          <Link href="/players"><span className="hover:text-white cursor-pointer">Players</span></Link>
           <ChevronRight className="w-4 h-4 mx-2" />
           <span className="text-white">{player.displayName}</span>
         </div>

@@ -16,7 +16,7 @@ export default function StateProfile() {
       
       <div className="border-b border-white/10 bg-black/40">
         <div className="container mx-auto px-4 md:px-6 py-3 flex items-center text-sm text-muted-foreground font-mono">
-          <Link href="/states"><a className="hover:text-white">States</a></Link>
+          <Link href="/states"><span className="hover:text-white cursor-pointer">States</span></Link>
           <ChevronRight className="w-4 h-4 mx-2" />
           <span className="text-white">State #{state.stateNumber}</span>
         </div>

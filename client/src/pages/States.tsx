@@ -110,9 +110,11 @@ export default function States() {
                   Updated {state.lastUpdated}
                 </span>
                 <Link href={`/state/${state.stateNumber}`}>
-                  <Button size="sm" className="bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground border border-primary/30">
-                    View State
-                  </Button>
+                  <span>
+                    <Button size="sm" className="bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground border border-primary/30">
+                      View State
+                    </Button>
+                  </span>
                 </Link>
               </div>
             </div>

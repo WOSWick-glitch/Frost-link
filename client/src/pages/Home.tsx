@@ -36,9 +36,9 @@ export default function Home() {
                     Top Recruiting Alliances
                   </h3>
                   <Link href="/alliances">
-                    <a className="text-sm text-primary hover:text-white flex items-center transition-colors">
+                    <span className="text-sm text-primary hover:text-white flex items-center transition-colors cursor-pointer">
                       View All <ArrowRight className="w-4 h-4 ml-1" />
-                    </a>
+                    </span>
                   </Link>
                 </div>
                 
@@ -167,9 +167,9 @@ export default function Home() {
             <span className="font-display font-bold text-lg text-white">FROST<span className="text-primary">LINK</span></span>
           </div>
           <div className="text-sm text-muted-foreground flex gap-4">
-            <Link href="/about"><a className="hover:text-white">About</a></Link>
-            <Link href="/rules"><a className="hover:text-white">Rules</a></Link>
-            <Link href="/privacy"><a className="hover:text-white">Privacy</a></Link>
+            <Link href="/about"><span className="hover:text-white cursor-pointer">About</span></Link>
+            <Link href="/rules"><span className="hover:text-white cursor-pointer">Rules</span></Link>
+            <Link href="/privacy"><span className="hover:text-white cursor-pointer">Privacy</span></Link>
           </div>
           <div className="text-xs text-muted-foreground/50">
             A controlled recruitment environment. Verified endorsements only.

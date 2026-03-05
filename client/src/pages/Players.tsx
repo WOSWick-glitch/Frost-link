@@ -116,9 +116,11 @@ export default function Players() {
                   Updated {player.lastUpdated}
                 </span>
                 <Link href={`/player/${player.slug}`}>
-                  <Button size="sm" className="bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground border border-primary/30">
-                    View Profile
-                  </Button>
+                  <span>
+                    <Button size="sm" className="bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground border border-primary/30">
+                      View Profile
+                    </Button>
+                  </span>
                 </Link>
               </div>
             </div>
